@@ -1,7 +1,7 @@
 package com.cg;
 
 public class Executor {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println("Welcome to Binary Tree Problem!!!");
 		
 		BinaryTree<Integer> binaryTree = new BinaryTree<>();
@@ -18,8 +18,11 @@ public class Executor {
 		binaryTree.add(32);
 		binaryTree.add(16);
 		binaryTree.add(63);
-		
+
 		int size = binaryTree.getSize();
 		System.out.println(size);
+
+		binaryTree.searchNode(63);
+		
 	}
 }
